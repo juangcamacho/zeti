@@ -254,10 +254,11 @@ svg { width: 1em; height: 1em; }
 .section__lead { color: var(--muted); font-size: 1.08rem; }
 
 /* Serviços */
-.services { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; }
+#servicos .section__head { margin-bottom: 2.25rem; }
+.services { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.1rem; }
 .service {
   position: relative;
-  padding: 1.8rem 1.6rem;
+  padding: 1.4rem 1.5rem;
   border-radius: var(--radius);
   background: linear-gradient(180deg, var(--surface) 0%, rgba(12,24,48,.4) 100%);
   border: 1px solid var(--line);
@@ -271,13 +272,13 @@ svg { width: 1em; height: 1em; }
 .service:hover { transform: translateY(-6px); border-color: rgba(46,163,255,.45); box-shadow: 0 24px 50px -24px rgba(46,163,255,.4); }
 .service:hover::before { opacity: 1; }
 .service__icon {
-  width: 56px; height: 56px; border-radius: 14px;
+  width: 48px; height: 48px; border-radius: 12px;
   display: grid; place-items: center;
   border: 1.5px solid rgba(46,163,255,.55);
   background: rgba(46,163,255,.08);
-  margin-bottom: 1.3rem;
+  margin-bottom: 1rem;
 }
-.service__icon svg { width: 28px; height: 28px; fill: none; stroke: var(--blue); stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.service__icon svg { width: 24px; height: 24px; fill: none; stroke: var(--blue); stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
 .service h3 { font-family: var(--font-head); font-size: 1.05rem; font-weight: 600; line-height: 1.35; margin-bottom: 0.6rem; }
 .service p { color: var(--muted); font-size: 0.93rem; }
 .service--cta {
@@ -286,7 +287,7 @@ svg { width: 1em; height: 1em; }
   border-color: rgba(46,163,255,.4);
 }
 .service--cta h3 { font-size: 1.2rem; }
-.service--cta .btn { margin-top: 1rem; align-self: flex-start; }
+.service--cta .btn { margin-top: 0.75rem; align-self: flex-start; }
 
 /* Sobre */
 .about { display: grid; grid-template-columns: 1fr 1.1fr; gap: clamp(2.5rem, 6vw, 5rem); align-items: center; }
