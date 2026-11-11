@@ -243,6 +243,7 @@ svg { width: 1em; height: 1em; }
 
 /* ---------- Seções ---------- */
 .section { padding: clamp(4.5rem, 10vw, 7.5rem) 0; position: relative; }
+.section[id] { scroll-margin-top: calc(2rem - clamp(4.5rem, 10vw, 7.5rem)); }
 .section--alt { background: linear-gradient(180deg, var(--bg-2) 0%, var(--bg) 100%); }
 .section__head { max-width: 44rem; margin-bottom: 3.5rem; }
 .section__title {
