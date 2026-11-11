@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZéTI | Tecnologia, Desenvolvimento e Infraestrutura</title>
+  <meta name="description" content="ZéTI – 10 anos de experiência em Tecnologia da Informação. Desenvolvimento de sistemas, IA, automação, Microsoft 365, servidores, suporte e gestão de ambientes de T.I.">
+  <meta property="og:title" content="ZéTI | Tecnologia que impulsiona negócios">
+  <meta property="og:description" content="Soluções completas em T.I. com tecnologia, segurança e eficiência.">
+  <meta property="og:image" content="assets/og-image.jpg">
+  <meta name="theme-color" content="#050b18">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23050b18'/%3E%3Cpath d='M24 18 12 32l12 14M40 18l12 14-12 14' fill='none' stroke='%232ea3ff' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M35 16 29 48' stroke='%23fff' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ CABEÇALHO ============ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="logo" aria-label="ZéTI - página inicial">
+        <svg class="logo__mark" viewBox="0 0 64 48" aria-hidden="true">
+          <path d="M20 6 4 24l16 18M44 6l16 18-16 18" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M36 8 28 40" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+        </svg>
+        <span class="logo__text">Zé<span>TI</span></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li><a href="#inicio" class="nav__link active">Início</a></li>
+          <li><a href="#servicos" class="nav__link">Serviços</a></li>
+          <li><a href="#sobre" class="nav__link">Sobre</a></li>
+          <li><a href="#processo" class="nav__link">Como trabalhamos</a></li>
+          <li><a href="#contato" class="nav__link">Contato</a></li>
+        </ul>
+        <a href="#contato" class="btn btn--primary nav__cta">Solicitar orçamento</a>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="eyebrow reveal">Tecnologia, desenvolvimento e infraestrutura</p>
+          <h1 class="hero__title reveal">
+            <span class="accent">10 anos de experiência</span><br>
+            em Tecnologia da Informação.
+          </h1>
+          <p class="hero__text reveal">
+            Soluções completas para impulsionar o seu negócio com
+            <strong id="typed" class="typed">tecnologia</strong><span class="caret" aria-hidden="true">|</span>
+          </p>
+          <div class="hero__actions reveal">
+            <a href="#contato" class="btn btn--primary">
+              Fale com um especialista
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="#servicos" class="btn btn--ghost">Conheça os serviços</a>
+          </div>
+          <ul class="hero__tags reveal" aria-label="Áreas de atuação">
+            <li>Linux</li><li>Windows</li><li>Redes</li><li>Segurança</li><li>Cloud</li>
+          </ul>
+        </div>
+
+        <aside class="hero__card reveal" aria-label="Painel de status">
+          <div class="term">
+            <div class="term__bar"><i></i><i></i><i></i><span>zeti@infra:~</span></div>
+            <pre class="term__body" id="terminal" aria-live="polite"></pre>
+          </div>
+          <ul class="status">
+            <li><span class="dot dot--ok"></span>Sistemas <b>online</b></li>
+            <li><span class="dot dot--ok"></span>Redes <b>estáveis</b></li>
+            <li><span class="dot dot--ok"></span>Segurança <b>ativa</b></li>
+            <li><span class="dot dot--ok"></span>Suporte <b>disponível</b></li>
+          </ul>
+        </aside>
+      </div>
+      <a href="#numeros" class="scroll-hint" aria-label="Rolar para baixo"><span></span></a>
+    </section>
+
+    <!-- ============ NÚMEROS ============ -->
+    <section class="stats" id="numeros" aria-label="Números da ZéTI">
+      <div class="container stats__grid">
+        <div class="stat reveal"><strong><span class="counter" data-target="10">0</span>+</strong><span>anos de experiência</span></div>
+        <div class="stat reveal"><strong><span class="counter" data-target="7">0</span></strong><span>frentes de serviço</span></div>
+        <div class="stat reveal"><strong><span class="counter" data-target="100">0</span>%</strong><span>foco no seu negócio</span></div>
+        <div class="stat reveal"><strong>360°</strong><span>do código à infraestrutura</span></div>
+      </div>
+    </section>
+
+    <!-- ============ SERVIÇOS ============ -->
+    <section class="section" id="servicos">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">O que fazemos</p>
+          <h2 class="section__title">Serviços completos de <span class="accent">T.I.</span></h2>
+          <p class="section__lead">Do desenvolvimento de software ao suporte no dia a dia, cuidamos de toda a tecnologia da sua empresa para você focar no que importa.</p>
+        </header>
+
+        <div class="services">
+          <article class="service reveal">
+            <div class="service__icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="m10 9-3 3 3 3M14 9l3 3-3 3"/></svg></div>
+            <h3>Desenvolvimento de sistemas e aplicações web</h3>
+            <p>Sistemas sob medida, portais, sites e aplicações web modernas, rápidas e seguras, pensadas para o seu processo.</p>
+          </article>
+
+          <article class="service reveal">
+            <div class="service__icon"><svg viewBox="0 0 24 24"><rect x="5" y="8" width="14" height="11" rx="3"/><path d="M12 8V5M12 4.5h.01M9 13h.01M15 13h.01M10 16h4M3 12v3M21 12v3"/></svg></div>
+            <h3>Inteligência Artificial e soluções inteligentes</h3>
+            <p>Chatbots, assistentes, análise de dados e integração de IA aos seus sistemas para ganhar produtividade.</p>
+          </article>
+
+          <article class="service reveal">
+            <div class="service__icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M2 12h3M19 12h3M4.9 19.1 7 17M17 7l2.1-2.1"/></svg></div>
+            <h3>Automação de processos</h3>
+            <p>Eliminamos tarefas repetitivas com fluxos automatizados, integrações entre sistemas e relatórios automáticos.</p>
+          </article>
+
+          <article class="service reveal">
+            <div class="service__icon"><svg viewBox="0 0 24 24"><path d="M4 6.5 13 3l7 2.5v13L13 21l-9-3.5 9 1.5V6L7 7.5v8L4 17.5z"/></svg></div>
+            <h3>Microsoft 365</h3>
+            <p>Implantação, migração e administração de e-mail, Teams, SharePoint e OneDrive, com licenciamento correto.</p>
+          </article>
+
+          <article class="service reveal">
+            <div class="service__icon"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="5" rx="1.5"/><rect x="4" y="10" width="16" height="5" rx="1.5"/><rect x="4" y="17" width="16" height="4" rx="1.5"/><path d="M8 5.5h.01M8 12.5h.01M8 19h.01"/></svg></div>
+            <h3>Servidores e infraestrutura de T.I.</h3>
+            <p>Projeto, instalação e manutenção de servidores Linux e Windows, redes, backup, virtualização e cloud.</p>
+          </article>
+
+          <article class="service reveal">
+            <div class="service__icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4M9 7l6 6M15 7l-1.5 1.5M9 13l1.5-1.5"/></svg></div>
+            <h3>Suporte e manutenção de computadores</h3>
+            <p>Atendimento remoto e presencial, formatação, upgrades, diagnóstico e manutenção preventiva e corretiva.</p>
+          </article>
+
+          <article class="service reveal">
+            <div class="service__icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="2.5"/><circle cx="5" cy="18" r="2.5"/><circle cx="19" cy="18" r="2.5"/><path d="M10.8 7.2 6.3 15.8M13.2 7.2l4.5 8.6M7.5 18h9"/></svg></div>
+            <h3>Gestão e suporte de ambientes de T.I.</h3>
+            <p>Gestão contínua do seu ambiente: monitoramento, inventário, políticas de segurança e suporte dedicado.</p>
+          </article>
+
+          <article class="service service--cta reveal">
+            <h3>Precisa de algo específico?</h3>
+            <p>Conte qual é o seu desafio e montamos uma solução sob medida para a sua empresa.</p>
+            <a href="#contato" class="btn btn--primary">Falar com a ZéTI</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SOBRE ============ -->
+    <section class="section section--alt" id="sobre">
+      <div class="container about">
+        <div class="about__media reveal">
+          <img src="assets/hero.jpg" alt="Estação de trabalho da ZéTI com monitores exibindo código e painel de sistemas" loading="lazy">
+          <div class="about__badge"><strong>10+</strong><span>anos em T.I.</span></div>
+        </div>
+        <div class="about__content">
+          <p class="eyebrow reveal">Sobre a ZéTI</p>
+          <h2 class="section__title reveal">Tecnologia que <span class="accent">simplifica processos</span>, resolve problemas e <span class="accent">impulsiona negócios</span>.</h2>
+          <p class="reveal">A ZéTI nasceu da experiência de mais de uma década resolvendo problemas reais de tecnologia. Unimos desenvolvimento de software, infraestrutura e suporte em um único parceiro, para que a sua empresa tenha uma T.I. confiável, segura e preparada para crescer.</p>
+          <ul class="checks reveal">
+            <li>Atendimento próximo, direto e sem burocracia</li>
+            <li>Soluções sob medida, sem pacotes engessados</li>
+            <li>Segurança da informação em todas as entregas</li>
+            <li>Visão completa: do código ao servidor</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DIFERENCIAIS ============ -->
+    <section class="section" id="diferenciais">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Por que a ZéTI</p>
+          <h2 class="section__title">Tecnologia, <span class="accent">segurança</span> e eficiência</h2>
+        </header>
+        <div class="pillars">
+          <div class="pillar reveal">
+            <svg viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg>
+            <h3>Segurança em primeiro lugar</h3>
+            <p>Backups, controle de acesso e boas práticas aplicadas desde o início de cada projeto.</p>
+          </div>
+          <div class="pillar reveal">
+            <svg viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>
+            <h3>Agilidade no atendimento</h3>
+            <p>Respostas rápidas e soluções objetivas para que a sua operação não pare.</p>
+          </div>
+          <div class="pillar reveal">
+            <svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 5-6"/></svg>
+            <h3>Foco em resultado</h3>
+            <p>Tecnologia como ferramenta de negócio: menos custo, mais produtividade.</p>
+          </div>
+          <div class="pillar reveal">
+            <svg viewBox="0 0 24 24"><path d="M18 10a6 6 0 0 0-12 0v4"/><rect x="3" y="13" width="4" height="6" rx="1.5"/><rect x="17" y="13" width="4" height="6" rx="1.5"/><path d="M19 19a3 3 0 0 1-3 3h-3"/></svg>
+            <h3>Suporte de verdade</h3>
+            <p>Um time que conhece o seu ambiente e acompanha a sua empresa de perto.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESSO ============ -->
+    <section class="section section--alt" id="processo">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Como trabalhamos</p>
+          <h2 class="section__title">Do diagnóstico ao <span class="accent">suporte contínuo</span></h2>
+        </header>
+        <ol class="steps">
+          <li class="step reveal"><span class="step__num">01</span><h3>Diagnóstico</h3><p>Entendemos o seu negócio, o ambiente atual e os pontos de melhoria.</p></li>
+          <li class="step reveal"><span class="step__num">02</span><h3>Proposta</h3><p>Apresentamos uma solução clara, com escopo, prazos e investimento.</p></li>
+          <li class="step reveal"><span class="step__num">03</span><h3>Execução</h3><p>Implantamos com qualidade, mínimo impacto na rotina e comunicação constante.</p></li>
+          <li class="step reveal"><span class="step__num">04</span><h3>Suporte</h3><p>Acompanhamos, monitoramos e evoluímos a solução junto com você.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ TECNOLOGIAS ============ -->
+    <section class="tech" aria-label="Tecnologias">
+      <div class="marquee">
+        <div class="marquee__track">
+          <span>Linux</span><span>Windows Server</span><span>Redes</span><span>Segurança</span><span>Cloud</span><span>Microsoft 365</span><span>Inteligência Artificial</span><span>Automação</span><span>Aplicações Web</span><span>Backup</span>
+          <span aria-hidden="true">Linux</span><span aria-hidden="true">Windows Server</span><span aria-hidden="true">Redes</span><span aria-hidden="true">Segurança</span><span aria-hidden="true">Cloud</span><span aria-hidden="true">Microsoft 365</span><span aria-hidden="true">Inteligência Artificial</span><span aria-hidden="true">Automação</span><span aria-hidden="true">Aplicações Web</span><span aria-hidden="true">Backup</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CLIENTES ============ -->
+    <section class="clients" id="clientes" aria-labelledby="clientesTitulo">
+      <p class="clients__title" id="clientesTitulo">Empresas que confiam em nós</p>
+      <div class="clients__marquee">
+        <div class="clients__track">
+          <div class="clients__group">
+            <a class="client client--tall" href="https://juangcamacho.github.io/proforce/" target="_blank" rel="noopener" aria-label="Proforce Treinamentos Profissionalizantes (abre o site em nova aba)"><img src="assets/cliente-proforce-mono.png" alt="Proforce Treinamentos Profissionalizantes" width="304" height="240"></a>
+            <a class="client" href="https://juangcamacho.github.io/hm/" target="_blank" rel="noopener" aria-label="Hidraumeister (abre o site em nova aba)"><img src="assets/cliente-hidraumeister-mono.png" alt="Hidraumeister" width="560" height="303"></a>
+            <a class="client client--tall" href="https://juangcamacho.github.io/proforce/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="assets/cliente-proforce-mono.png" alt="" width="304" height="240"></a>
+            <a class="client" href="https://juangcamacho.github.io/hm/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="assets/cliente-hidraumeister-mono.png" alt="" width="560" height="303"></a>
+            <a class="client client--tall" href="https://juangcamacho.github.io/proforce/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="assets/cliente-proforce-mono.png" alt="" width="304" height="240"></a>
+            <a class="client" href="https://juangcamacho.github.io/hm/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="assets/cliente-hidraumeister-mono.png" alt="" width="560" height="303"></a>
+            <a class="client client--tall" href="https://juangcamacho.github.io/proforce/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="assets/cliente-proforce-mono.png" alt="" width="304" height="240"></a>
+            <a class="client" href="https://juangcamacho.github.io/hm/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="assets/cliente-hidraumeister-mono.png" alt="" width="560" height="303"></a>
+          </div>
+          <div class="clients__group" aria-hidden="true">
+            <a class="client client--tall" href="https://juangcamacho.github.io/proforce/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="assets/cliente-proforce-mono.png" alt="" width="304" height="240"></a>
+            <a class="client" href="https://juangcamacho.github.io/hm/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="assets/cliente-hidraumeister-mono.png" alt="" width="560" height="303"></a>
+            <a class="client client--tall" href="https://juangcamacho.github.io/proforce/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="assets/cliente-proforce-mono.png" alt="" width="304" height="240"></a>
+            <a class="client" href="https://juangcamacho.github.io/hm/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="assets/cliente-hidraumeister-mono.png" alt="" width="560" height="303"></a>
+            <a class="client client--tall" href="https://juangcamacho.github.io/proforce/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="assets/cliente-proforce-mono.png" alt="" width="304" height="240"></a>
+            <a class="client" href="https://juangcamacho.github.io/hm/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="assets/cliente-hidraumeister-mono.png" alt="" width="560" height="303"></a>
+            <a class="client client--tall" href="https://juangcamacho.github.io/proforce/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="assets/cliente-proforce-mono.png" alt="" width="304" height="240"></a>
+            <a class="client" href="https://juangcamacho.github.io/hm/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="assets/cliente-hidraumeister-mono.png" alt="" width="560" height="303"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTATO ============ -->
+    <section class="section" id="contato">
+      <div class="container contact">
+        <div class="contact__info">
+          <p class="eyebrow reveal">Contato</p>
+          <h2 class="section__title reveal">Vamos levar a sua empresa para o <span class="accent">próximo nível</span>?</h2>
+          <p class="reveal">Envie uma mensagem contando o que você precisa. Retornamos com um diagnóstico inicial e uma proposta sem compromisso.</p>
+
+          <!-- EDITE AQUI: substitua pelos dados reais da ZéTI (também em js/script.js -> CONFIG) -->
+          <ul class="contact__list reveal">
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 1-11.8 7L4 20l1-4.1A8 8 0 1 1 20 12z"/></svg>
+              <div><span>WhatsApp</span><a href="#" data-whatsapp>(00) 00000-0000</a></div>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              <div><span>E-mail</span><a href="mailto:contato@zeti.com.br" data-email>contato@zeti.com.br</a></div>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              <div><span>Atendimento</span><p>Segunda a sexta, das 8h às 18h</p></div>
+            </li>
+          </ul>
+        </div>
+
+        <form class="form reveal" id="contactForm" novalidate>
+          <div class="form__row">
+            <div class="field">
+              <label for="nome">Nome *</label>
+              <input id="nome" name="nome" type="text" autocomplete="name" placeholder="Seu nome" required>
+              <small class="field__error"></small>
+            </div>
+            <div class="field">
+              <label for="empresa">Empresa</label>
+              <input id="empresa" name="empresa" type="text" autocomplete="organization" placeholder="Nome da empresa">
+              <small class="field__error"></small>
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="field">
+              <label for="email">E-mail *</label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="voce@empresa.com.br" required>
+              <small class="field__error"></small>
+            </div>
+            <div class="field">
+              <label for="telefone">Telefone / WhatsApp</label>
+              <input id="telefone" name="telefone" type="tel" autocomplete="tel" placeholder="(00) 00000-0000" inputmode="numeric">
+              <small class="field__error"></small>
+            </div>
+          </div>
+          <div class="field">
+            <label for="servico">Serviço de interesse *</label>
+            <select id="servico" name="servico" required>
+              <option value="">Selecione uma opção</option>
+              <option>Desenvolvimento de sistemas e aplicações web</option>
+              <option>Inteligência Artificial e soluções inteligentes</option>
+              <option>Automação de processos</option>
+              <option>Microsoft 365</option>
+              <option>Servidores e infraestrutura de T.I.</option>
+              <option>Suporte e manutenção de computadores</option>
+              <option>Gestão e suporte de ambientes de T.I.</option>
+              <option>Outro</option>
+            </select>
+            <small class="field__error"></small>
+          </div>
+          <div class="field">
+            <label for="mensagem">Mensagem *</label>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Conte um pouco sobre o que você precisa" required></textarea>
+            <small class="field__error"></small>
+          </div>
+          <div class="form__actions">
+            <button type="submit" class="btn btn--primary" data-channel="whatsapp">Enviar pelo WhatsApp</button>
+            <button type="submit" class="btn btn--ghost" data-channel="email">Enviar por e-mail</button>
+          </div>
+          <p class="form__feedback" id="formFeedback" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ RODAPÉ ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#inicio" class="logo" aria-label="ZéTI">
+          <svg class="logo__mark" viewBox="0 0 64 48" aria-hidden="true">
+            <path d="M20 6 4 24l16 18M44 6l16 18-16 18" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M36 8 28 40" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+          </svg>
+          <span class="logo__text">Zé<span>TI</span></span>
+        </a>
+        <p>Tecnologia, desenvolvimento e infraestrutura.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Links do rodapé">
+        <a href="#servicos">Serviços</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#processo">Como trabalhamos</a>
+        <a href="#clientes">Clientes</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year"></span> ZéTI. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante WhatsApp -->
+  <a href="#" class="wa-float" data-whatsapp aria-label="Fale conosco pelo WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.6c-2 0-4-.6-5.7-1.6l-.4-.2-3.9 1 1-3.8-.3-.4A10.6 10.6 0 1 1 16 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5 1-1.7.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.7 3.7 0 0 0-1.1 2.7 6.4 6.4 0 0 0 1.3 3.4 14.7 14.7 0 0 0 5.7 5c2.1.9 2.9 1 4 .8a3.4 3.4 0 0 0 2.2-1.6 2.8 2.8 0 0 0 .2-1.6c-.1-.2-.3-.3-.7-.5z"/></svg>
+  </a>
+
+  <button class="to-top" id="toTop" aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 15 6-6 6 6"/></svg>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
